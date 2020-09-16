@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		6B3E8D6C25127F0200F9D680 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3E8D6B25127F0200F9D680 /* AppDelegate.swift */; };
 		6B3E8D6E25127F0200F9D680 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3E8D6D25127F0200F9D680 /* SceneDelegate.swift */; };
-		6B3E8D7025127F0200F9D680 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3E8D6F25127F0200F9D680 /* ViewController.swift */; };
 		6B3E8D7325127F0200F9D680 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B3E8D7125127F0200F9D680 /* Main.storyboard */; };
 		6B3E8D7525127F0300F9D680 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B3E8D7425127F0300F9D680 /* Assets.xcassets */; };
 		6B3E8D7825127F0300F9D680 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B3E8D7625127F0300F9D680 /* LaunchScreen.storyboard */; };
+		6B3E8D832512909E00F9D680 /* DiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3E8D822512909E00F9D680 /* DiceModel.swift */; };
+		6B3E8D852512980000F9D680 /* RollDicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3E8D842512980000F9D680 /* RollDicesViewController.swift */; };
+		6B3E8D872512A7F800F9D680 /* Dados Document.md in Resources */ = {isa = PBXBuildFile; fileRef = 6B3E8D862512A7F800F9D680 /* Dados Document.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6B3E8D6825127F0100F9D680 /* Dados.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dados.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B3E8D6B25127F0200F9D680 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6B3E8D6D25127F0200F9D680 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6B3E8D6F25127F0200F9D680 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6B3E8D7225127F0200F9D680 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6B3E8D7425127F0300F9D680 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B3E8D7725127F0300F9D680 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B3E8D7925127F0300F9D680 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B3E8D822512909E00F9D680 /* DiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceModel.swift; sourceTree = "<group>"; };
+		6B3E8D842512980000F9D680 /* RollDicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollDicesViewController.swift; sourceTree = "<group>"; };
+		6B3E8D862512A7F800F9D680 /* Dados Document.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Dados Document.md"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,7 @@
 		6B3E8D5F25127F0100F9D680 = {
 			isa = PBXGroup;
 			children = (
+				6B3E8D862512A7F800F9D680 /* Dados Document.md */,
 				6B3E8D6A25127F0200F9D680 /* Dados */,
 				6B3E8D6925127F0100F9D680 /* Products */,
 			);
@@ -56,15 +61,40 @@
 		6B3E8D6A25127F0200F9D680 /* Dados */ = {
 			isa = PBXGroup;
 			children = (
-				6B3E8D6B25127F0200F9D680 /* AppDelegate.swift */,
+				6B3E8D8125127F9300F9D680 /* Model */,
+				6B3E8D7F25127F7500F9D680 /* View */,
+				6B3E8D8025127F8600F9D680 /* Controller */,
 				6B3E8D6D25127F0200F9D680 /* SceneDelegate.swift */,
-				6B3E8D6F25127F0200F9D680 /* ViewController.swift */,
-				6B3E8D7125127F0200F9D680 /* Main.storyboard */,
 				6B3E8D7425127F0300F9D680 /* Assets.xcassets */,
 				6B3E8D7625127F0300F9D680 /* LaunchScreen.storyboard */,
 				6B3E8D7925127F0300F9D680 /* Info.plist */,
 			);
 			path = Dados;
+			sourceTree = "<group>";
+		};
+		6B3E8D7F25127F7500F9D680 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6B3E8D7125127F0200F9D680 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6B3E8D8025127F8600F9D680 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6B3E8D6B25127F0200F9D680 /* AppDelegate.swift */,
+				6B3E8D842512980000F9D680 /* RollDicesViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6B3E8D8125127F9300F9D680 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6B3E8D822512909E00F9D680 /* DiceModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +157,7 @@
 			files = (
 				6B3E8D7825127F0300F9D680 /* LaunchScreen.storyboard in Resources */,
 				6B3E8D7525127F0300F9D680 /* Assets.xcassets in Resources */,
+				6B3E8D872512A7F800F9D680 /* Dados Document.md in Resources */,
 				6B3E8D7325127F0200F9D680 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +169,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B3E8D7025127F0200F9D680 /* ViewController.swift in Sources */,
+				6B3E8D832512909E00F9D680 /* DiceModel.swift in Sources */,
 				6B3E8D6C25127F0200F9D680 /* AppDelegate.swift in Sources */,
 				6B3E8D6E25127F0200F9D680 /* SceneDelegate.swift in Sources */,
+				6B3E8D852512980000F9D680 /* RollDicesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
